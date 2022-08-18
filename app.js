@@ -24,7 +24,7 @@ function printOdds (count) {
 // let input = parseInt(prompt("What number should we count to?"));
 // let input
 
-printOdds (20);
+printOdds (10);
 printOdds (-20);
 
 
@@ -42,14 +42,16 @@ function checkAge (userName, age) {
     }
     }
 checkAge ("Jupiter", 16);
+checkAge ("Jupiter", 36);
+checkAge ("Jupiter", 15);
 
 // Exercise 3 Section
 console.log("EXERCISE 3:\n==========\n");
 
 function quadrant (x, y) {
-    if (x===0){
+    if (x==0 && y !=0){
         console.log ("On x axis");
-    } else if (y===0) {
+    } else if (y==0 && x != 0) {
         console.log ("On y axis");
     } else 
     if (x>0 && y>0) {
@@ -60,11 +62,14 @@ function quadrant (x, y) {
         console.log ("Q3");
     } else if (x>0 && y<0) {
         console.log ("Q4");
+    } else {
+        console.log ("at origin")
     }
     }
 
     quadrant(0,6);
     quadrant(5,4);
+    quadrant(0,0);
 
 // Exercise 4 Section
 console.log("EXERCISE 4:\n==========\n");
